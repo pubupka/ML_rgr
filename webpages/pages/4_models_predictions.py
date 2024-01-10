@@ -5,7 +5,6 @@ from category_encoders.binary import BinaryEncoder
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 from tensorflow import keras
-import joblib
 
 # file = st.file_uploader("Выберите файл с расширением .csv")
 df_cars = pd.read_csv(r"./data/cars.csv")
