@@ -27,7 +27,7 @@ def get_prepared(df):
 
 
 if file:
-    df = pd.read_csv(file)
+    df = pd.read_csv(file).drop("Unnamed: 0", axis=1)
     st.write(df)
     st.write(get_prepared(df))
 
