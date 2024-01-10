@@ -4,7 +4,7 @@ import pandas as pd
 
 st.title("О датасете")
 st.write("Все модели были обучены на датасете, в котором необходимо прогнозировать стоимость автомобиля в долларах")
-df = pd.read_csv(r".\data\cars.csv")
+df = pd.read_csv(r"./data/cars.csv")
 st.dataframe(df, hide_index=True)
 
 description = pd.DataFrame(
