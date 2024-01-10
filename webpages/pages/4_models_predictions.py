@@ -169,7 +169,7 @@ if btn:
         predictions.append(pred)
         st.write("Стекинг: " + str(round(pred)))
 
-    nn = keras.models.load_model(r"./models/6_neural_network_regression.keras")
+    nn = keras.models.load_model(r"./models/6_neural_network_regression.h5")
     pred = nn.predict(row)
     st.write("Полносвязная нейронная сеть:", str(round(int(pred[0]))))
 
