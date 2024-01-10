@@ -5,6 +5,6 @@ tensorflow
 streamlit
 numpy
 scipy
-scikit-learn
+scikit-learn==1.2.2
 notebook
 category_encoders
