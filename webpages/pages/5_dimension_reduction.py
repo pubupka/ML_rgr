@@ -29,12 +29,11 @@ def get_prepared(df):
 if file:
     df = pd.read_csv(file)
     st.write(df)
-    st.write(get_prepared(df))
 
     btn = st.button("Понизить размерность до 2")
 
     if btn:
-        with open(r"./models/5_stacking_regression.pickle", "rb") as f:
+        with open(r"./models/2_pca.pickle", "rb") as f:
             pca = pickle.load(f)
             reduced = pca.transform(get_prepared(df))
-            st.download_button("Загрузить файл", pd.DataFrame(reduced).to_csv(), "reducted.csv")
+            st.download_button("Загрузить файл", pd.DataFrame(reduced).to_csv(), "reduced.csv")
