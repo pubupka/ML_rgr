@@ -6,7 +6,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 st.title("Понижение размерности")
 
-file = st.file_uploader("Загрузите файл для понижение размерности в формате .csv")
+file = st.file_uploader("Загрузите непредобработанный файл в формате .csv")
 
 
 def get_prepared(df):
@@ -27,7 +27,7 @@ def get_prepared(df):
 
 
 if file:
-    df = pd.read_csv(file).drop("Unnamed: 0", axis=1)
+    df = pd.read_csv(file)
     st.write(df)
     st.write(get_prepared(df))
 
