@@ -1,5 +1,5 @@
 # *DashBoard для вывода моделей ML*
-## https://khalimov-rgr.streamlit.app/models_predictions
+## https://khalimov-rgr.streamlit.app/
 
 
 # Веб-приложение включает в себя 5 страниц:
